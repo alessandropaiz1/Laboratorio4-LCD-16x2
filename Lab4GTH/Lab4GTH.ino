@@ -47,6 +47,18 @@ byte estadob2 = 0;
 //*****************************************************************************
 // Interrupciones
 //*****************************************************************************
+void IRAM_ATTR ISRbsuma(){     // Interrupción para bot on de incrementar contador
+  if (contador > 255){
+    contador = 0;
+  }
+}
+
+void IRAM_ATTR ISRbresta(){     // Interrupción para boton de decrementar contador
+  if (contador < 0){
+    contador = 0 ;
+  }
+}
+
 //*****************************************************************************
 // Configuración
 //*****************************************************************************
