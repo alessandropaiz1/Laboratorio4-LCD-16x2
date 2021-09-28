@@ -134,4 +134,6 @@ void loop() {
   Serial.print("\t");
   
   Serial.print(contador);                              // Imprimir valor del contador 
+  LCD.clear();
+  LCD.print("Pot1:");
 }
