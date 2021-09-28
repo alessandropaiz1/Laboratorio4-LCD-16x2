@@ -70,4 +70,7 @@ void setup() {
   pinMode(b1, INPUT_PULLUP);                
   pinMode(b2, INPUT_PULLUP);
 
+  attachInterrupt(b1, ISRbsuma, HIGH);      // Configurar interrupción del botón incrementar 
+  attachInterrupt(b2, ISRbresta, HIGH);     // Configurar interrupción botón decrementar 
+}
 }
