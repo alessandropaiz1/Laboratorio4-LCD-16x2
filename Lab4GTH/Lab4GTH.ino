@@ -136,4 +136,27 @@ void loop() {
   Serial.print(contador);                              // Imprimir valor del contador 
   LCD.clear();
   LCD.print("Pot1:");
+
+  LCD.setCursor(1, 0);                                 // Imprimir valores separados de Pot1
+  LCD.print(decenas1);
+  LCD.print('.');
+  LCD.print(unidades1);
+  LCD.print(decimal1);
+
+  LCD.setCursor(0, 6);                                 // Imprimir valores separados de Pot2
+  LCD.print("Pot2:");
+  LCD.setCursor(1, 6);
+  LCD.print(decenas2);
+  LCD.print('.');
+  LCD.print(unidades2);
+  LCD.print(decimal2);
+
+  LCD.setCursor(0, 12);                                 // Imprimir valores separados del contador
+  LCD.print("CPU");
+  LCD.setCursor(1, 12);
+  LCD.print(centenas);
+  LCD.print(decenas);
+  LCD.print(unidades);
+  
+  delay(250);
 }
