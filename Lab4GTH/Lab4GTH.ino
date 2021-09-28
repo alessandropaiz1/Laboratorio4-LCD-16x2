@@ -31,6 +31,11 @@
 //*****************************************************************************
 // Variables Globales
 //*****************************************************************************
+// Create An LCD Object. Signals: [ RS, EN, D4, D5, D6, D7 ]
+LiquidCrystal LCD(rs, en, d4, d5, d6, d7);
+uint8_t decenas1, unidades1, decimal1;     // Unidad, decimal 1 y decimal 2
+uint8_t decenas2, unidades2, decimal2;
+uint8_t centenas, decenas, unidades;
 //*****************************************************************************
 // Interrupciones
 //*****************************************************************************
