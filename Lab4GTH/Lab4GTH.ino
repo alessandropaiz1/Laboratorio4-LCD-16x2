@@ -73,4 +73,21 @@ void setup() {
   attachInterrupt(b1, ISRbsuma, HIGH);      // Configurar interrupción del botón incrementar 
   attachInterrupt(b2, ISRbresta, HIGH);     // Configurar interrupción botón decrementar 
 }
+void loop() {
+  if (digitalRead(b1) == LOW){
+    estadob1 = 1;
+  }
+
+  if (digitalRead(b2) == LOW){
+    estadob2 = 1;
+  }
+  if (digitalRead(b1) == HIGH && estadob1 == 1){
+    estadob1 = 0;
+    contador++;
+  }
+
+  if (digitalRead(b2) == HIGH && estadob2 == 1){
+    estadob2 = 0;
+    contador--;
+  }
 }
