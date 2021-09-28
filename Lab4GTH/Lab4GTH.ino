@@ -64,5 +64,10 @@ void IRAM_ATTR ISRbresta(){     // Interrupción para boton de decrementar conta
 //*****************************************************************************
 void setup() {
   Serial.begin(115200);                    // Configuración serial 
+ 
   LCD.begin(16, 2);                        // Configurar LCD 16*2
+
+  pinMode(b1, INPUT_PULLUP);                
+  pinMode(b2, INPUT_PULLUP);
+
 }
