@@ -97,4 +97,12 @@ void loop() {
   unidades1 = temp / 10.0;
   temp = temp - unidades1 *10.0;
   decimal1 = temp;
+
+  voltaje2 = analogReadMilliVolts(pot2) / 10.0;       // Separar valores del voltaje P2
+  int temp2 = voltaje2;
+  decenas2 = temp2 / 100.0;
+  temp2 = temp2 - decenas2 *100.0;
+  unidades2 = temp2 / 10.0;
+  temp2 = temp2 - unidades2 *10.0;
+  decimal2 = temp2;
 }
