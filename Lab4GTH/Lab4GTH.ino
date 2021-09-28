@@ -112,4 +112,26 @@ void loop() {
   decenas = cnt / 10.0;
   cnt = cnt - decenas * 10.0;
   unidades = cnt;
+
+  Serial.print(voltaje);                              // Imprimir valores Pot1
+  Serial.print("\t");
+  Serial.print(decenas1);
+  Serial.print("\t");
+  Serial.print(unidades1);
+  Serial.print("\t");
+  Serial.println(decimal1);
+
+  Serial.print("\t");
+
+  Serial.print(voltaje2);                              // Imprimir valores Pot2
+  Serial.print("\t");
+  Serial.print(decenas2);
+  Serial.print("\t");
+  Serial.print(unidades2);
+  Serial.print("\t");
+  Serial.println(decimal2);
+
+  Serial.print("\t");
+  
+  Serial.print(contador);                              // Imprimir valor del contador 
 }
