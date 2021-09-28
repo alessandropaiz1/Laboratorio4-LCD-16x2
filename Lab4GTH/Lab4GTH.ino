@@ -90,4 +90,11 @@ void loop() {
     estadob2 = 0;
     contador--;
   }
+  voltaje = analogReadMilliVolts(pot1) / 10.0;        // Separar valores del voltaje P1
+  int temp = voltaje;
+  decenas1 = temp / 100.0;
+  temp = temp - decenas1 *100.0;
+  unidades1 = temp / 10.0;
+  temp = temp - unidades1 *10.0;
+  decimal1 = temp;
 }
