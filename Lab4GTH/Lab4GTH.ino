@@ -105,4 +105,11 @@ void loop() {
   unidades2 = temp2 / 10.0;
   temp2 = temp2 - unidades2 *10.0;
   decimal2 = temp2;
+
+  int cnt = contador;                                 // Separar valores del contador 
+  centenas = contador / 100.0;
+  cnt = cnt - centenas * 100.0;
+  decenas = cnt / 10.0;
+  cnt = cnt - decenas * 10.0;
+  unidades = cnt;
 }
